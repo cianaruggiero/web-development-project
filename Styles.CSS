@@ -1,0 +1,136 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #C8FFE0;
+}
+
+h1{
+    font-size: 64px;
+    text-align: center;
+}
+
+header{
+    background-color: #85E6C5;
+    padding: 10px 0;
+    text-align: center;
+    color: #1e183d;
+}
+
+h2{
+    font-size: 32px;
+    text-align: center;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li{
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a{
+    color: #3a2d74;
+    text-decoration: none;
+}
+
+nav ul li a:hover{ /*color when hovering over options on nav menu*/
+    color: rgb(147, 147, 147);
+}
+
+p{
+    color: #3a2d74;
+    text-align: center;
+    background-color: #C8FFE0;
+    margin: 0;
+    padding: 28px;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.card{
+    text-align: center;
+    border-radius: 12px;
+    width: 400px;
+    height: auto;
+}
+
+.img{
+    text-align: center;
+    border-radius: 12px;
+    width: 90%;
+    height: fit-content;
+    margin-top: 50%;
+}
+
+.spacing{ /*setup to make grid responsive*/
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    margin: 0 10% 0 10%;
+}
+
+@media (max-width:800px){ /*resizing for responsivness*/
+    .spacing{
+        grid-template-columns: 1fr;
+    }
+    .img{
+        margin-top: 10%;
+    }
+    .gallery{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.gallery{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+main{
+    margin: 0 10% 0 10%;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 16px;
+    background-color: #f1f1f1;
+    border-radius: 12px;
+}
+
+h2{
+    font-size: 16px;
+}
+
+.contact-form input{
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    padding: 12px 12px;
+    background-color: #614BC3;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.contact-form input.error{ /*changes that occur when the error condition gets met*/
+    border: 1px solid rgba(224, 0, 0, 0.6);
+    background-color: rgba(224, 0, 0, 0.1);
+} 
