@@ -6,8 +6,6 @@ const port = 3000;
 const app = express();
 app.use(bodyParser.urlencoded({extended:true}));
 
-app.use(express.static("Public"));
-
 app.post('/send-email', async (req, res) => {
     const{name, email, message} = req.body;
     const transporter = nodemailer.createTransport({
