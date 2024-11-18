@@ -2,7 +2,7 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #C8FFE0;
+    background-color: #f6fefa;
 }
 
 h1{
@@ -14,11 +14,11 @@ header{
     background-color: #85E6C5;
     padding: 10px 0;
     text-align: center;
-    color: #1e183d;
+    color: #12093d;
 }
 
 h2{
-    font-size: 32px;
+    font-size: 48px;
     text-align: center;
 }
 
