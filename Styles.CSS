@@ -9,7 +9,6 @@ h1{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
     margin: 2% 2% 2% 2%;
-    z-index: 1;
 }
 
 header{
@@ -108,21 +107,20 @@ img{
     gap: 20px;
 }
 
-.ghost-bounce{
+.ghost-bounce{ /*setting up where the ghost png is on the screen and the viewport height for it*/
     height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.ghost{
+.ghost{ /*setting up the size of the ghost as well as the animation it will be doing*/
     width: 100px;
     height: 100px;
     animation: bouncing 2.5s ease-in-out infinite;
-    z-index: 2;
 }
 
-@keyframes bouncing {
+@keyframes bouncing { /*telling the png how far to travel for the animation*/
     0%{
         transform: translateY(20px);
     }
@@ -150,7 +148,7 @@ main{
     border-radius: 20px;
 }
 
-.instagram{
+.instagram{ /*adjusting how the button looks and where it appears on screen*/
     justify-content: center;
     width: 240px;
     height: 50px;
@@ -165,7 +163,7 @@ main{
     color: #3c2d51;
 }
 
-.instagram:hover{
+.instagram:hover{ /*making the button interactive*/
     background-color: #957888;
 }
 
