@@ -1,25 +1,29 @@
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f6fefa;
+    background-color: #fbe8e3;
 }
 
 h1{
     font-size: 64px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
+    margin: 2% 2% 2% 2%;
+    z-index: 1;
 }
 
 header{
-    background-color: #85E6C5;
+    background-color: #c59eb3;
     padding: 10px 0;
     text-align: center;
-    color: #12093d;
+    color: #3c2d51;
 }
 
 h2{
-    font-size: 48px;
+    font-size: 32px;
     text-align: center;
+    color: #3c2d51;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 nav ul{
@@ -29,29 +33,38 @@ nav ul{
 
 nav ul li{
     display: inline;
-    margin-right: 10px;
+    margin-right: 25px;
 }
 
 nav ul li a{
-    color: #3a2d74;
+    color: #3c2d51;
     text-decoration: none;
+    font-size: 20px;
 }
 
 nav ul li a:hover{ /*color when hovering over options on nav menu*/
-    color: rgb(147, 147, 147);
+    color: #694F8E;
 }
 
 p{
-    color: #3a2d74;
+    color: #694F8E;
     text-align: center;
-    background-color: #C8FFE0;
+    background-color: #fbe8e3;
     margin: 0;
     padding: 28px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.sign{
+    height: 600px;
+    width: auto;
 }
 
 img{
     width: 100%;
     height: auto;
+    border-radius: 20px;
 }
 
 .card{
@@ -94,8 +107,34 @@ img{
     gap: 20px;
 }
 
+.ghost-bounce{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ghost{
+    width: 100px;
+    height: 100px;
+    animation: bouncing 2.5s ease-in-out infinite;
+    z-index: 2;
+}
+
+@keyframes bouncing {
+    0%{
+        transform: translateY(20px);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(20px);
+    }
+}
+
 main{
-    margin: 0 10% 0 10%;
+    margin: 0 10% 3% 10%;
     text-align: center;
 }
 
@@ -106,28 +145,58 @@ main{
     max-width: 500px;
     margin: 0 auto;
     padding: 16px;
-    background-color: #f1f1f1;
-    border-radius: 12px;
+    background-color: #decac5;
+    border-radius: 20px;
 }
 
-h2{
+.instagram{
+    justify-content: center;
+    width: 240px;
+    height: 50px;
+    font-size: 24px;
+    background-color: #c59eb3;
+    border-color: #c59eb3;
+    border-radius: 6px;
+}
+
+.instagram a{
+    text-decoration: none;
+    color: #3c2d51;
+}
+
+.instagram:hover{
+    background-color: #957888;
+}
+
+h3{
     font-size: 16px;
+    color: #3c2d51;
 }
 
 .contact-form input{
     padding: 12px;
     margin-bottom: 12px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: 6px;
     font-size: 16px;
 }
 
 .contact-form button {
     padding: 12px 12px;
-    background-color: #614BC3;
+    background-color: #957888;
     color: #fff;
     border-radius: 6px;
+    border-color: #362a31;
     cursor: pointer;
+}
+
+.contact-form button a{
+    text-decoration: none;
+    color: #3c2d51;
+}
+
+.contact-form button:hover{
+    background-color: #7f6674;
 }
 
 .contact-form input.error{ /*changes that occur when the error condition gets met*/

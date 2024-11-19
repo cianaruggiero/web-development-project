@@ -10,6 +10,11 @@
         <header>
             <nav>
                 <h1>Ciana Ruggiero</h1>
+                <div class="ghost-bounce">
+                    <div class="ghost">
+                        <img src="ghost.png" alt="Ghost">
+                    </div>
+                </div>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="About.html">About</a></li>
@@ -18,14 +23,15 @@
             </nav>
         </header>
         <main>
+            <h2>Contact Me</h2>
             <form class="contact-form" id="contactForm" method="POST" action="/send-email">
-                <h2>Name</h2>
+                <h3>Name</h3>
                 <input name="name" class="errorCheck" required>
     
-                <h2>Email</h2>
+                <h3>Email</h3>
                 <input name="email" class="errorCheck" required>
     
-                <h2>Message</h2>
+                <h3>Message</h3>
                 <input name="message" class="errorCheck" required>
     
                 <button type="Submit">Submit</button>
